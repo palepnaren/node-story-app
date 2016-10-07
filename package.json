@@ -1,0 +1,35 @@
+{
+  "name": "story_app",
+  "version": "1.0.0",
+  "description": "user can share his/her stories with all",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
+    "chalk": "^1.1.3",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "mongoose": "^4.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/palepnaren/node-story-app.git"
+  },
+  "keywords": [
+    "express",
+    "story",
+    "node",
+    "mongoose"
+  ],
+  "author": "Naren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/palepnaren/node-story-app/issues"
+  },
+  "homepage": "https://github.com/palepnaren/node-story-app#readme"
+}
