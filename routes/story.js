@@ -13,7 +13,7 @@ exports.insertStories = function(req, res){
     var title = req.body.title;
     var uri = req.body.imageLink;
     var summary = req.body.summary;
-    var story = req.body.content;
+    var content = req.body.content;
     var author = req.session.username;
     console.log(author);
 
@@ -22,7 +22,7 @@ exports.insertStories = function(req, res){
     newStory.title=title;
     newStory.uri = uri;
     newStory.summary=summary;
-    newStory.story=story;
+    newStory.content=content;
     newStory.author=author;
 
 
@@ -46,7 +46,7 @@ exports.insertStories = function(req, res){
 exports.getStory=function(res, req){
   var path = req.params.story;
   Story.findOne({slug:path}, function(err,story){
-    res.render('Stories',{session:req.session,story:story});
+    res.render('Stories',{story:story,session:req.session});
   });
 }
 
